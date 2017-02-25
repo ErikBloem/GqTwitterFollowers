@@ -1,7 +1,7 @@
 # GqTwitterFollowers
 Organize your followers and friends
 
-This is the first alpha Twitter Followers upload. This web application allows you to organize your twitter followers and friends. You can mostly work off-line. Only when you click on 'Get data from Twitter it will get either your friends or followers from twitter'.
+This is the first alpha Twitter Followers upload. This web application allows you to organize your twitter followers and friends. You can mostly work off-line. Only when you click on 'Get data from Twitter' it will either get your friends or followers from twitter.
 
 Offline you can then organize your twitter followers and friends. You can follow followers that you don't follow and unfollow friends who do not follow you, either by selecting specific users or all. You can also followers to a 'do not unfollow' list so you do not 'unfollow' those you really do not want to 'unfollow'. The same you can do with people you never ever want to start following.
 
