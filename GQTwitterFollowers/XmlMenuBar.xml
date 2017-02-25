@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<navMenu>
+  <Twitter_Data>
+    <Followers Tooltip="People who are following you on twitter" />
+    <Friends Tooltip="Friends (you follow) on twitter" />
+  </Twitter_Data>
+  <Organize_Offline Tooltip="Here you can analyze the ones you are following (friends) who are not a follower, exclude friends from your destroy list, and destroy friends you no longer want to follow since they don't follow you">
+    <OfflineFollowers>Followers
+      <Analyze Tooltip="Here you can analyze the ones you are following (friends) who are not a follower of you" />
+      <Exclude Tooltip="List of users you never want to unfollow">Always Follow</Exclude>
+      <Unfollow Tooltip="Unfollow friends you no longer want to follow since they don't follow you" />
+    </OfflineFollowers>
+    <OfflineFriends>Friends
+      <NotFollowing Tooltip="Users you are not following">Not Following</NotFollowing>
+      <NeverFollow Tooltip="List of users you never want to follow">Never Follow</NeverFollow>
+    </OfflineFriends>
+  </Organize_Offline>
+</navMenu>

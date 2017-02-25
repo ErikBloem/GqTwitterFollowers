@@ -1,0 +1,149 @@
+﻿        .twitter-widget-masterdiv
+        {
+            width: 98%;
+            padding: 10px 10px;
+            border:1px solid;
+        }
+        .twitter-widget
+        {
+            width: 1400px;
+            padding: 2px 2px;
+        }
+        .twitter-widget .headr
+        {
+            float: left;
+            width: 100%;
+            border-bottom: 1px solid #c2c2c2;
+            padding: 0 0 8px 0;
+            color: #333333;
+            margin: 0 0 4px 0;
+        }
+        .twitter-widget .headr img, .follow-btn
+        {
+            float: left;
+        }
+        .twitter-widget-header {
+            font-family: Arial;
+            font-size: 14px;
+            color: crimson;
+            font-weight: bold; 
+        }
+        .follow-btn
+        {
+        	margin-right: 45px;
+            display: block;
+            padding: 50px 0 0 7px;
+            float: right;
+        }
+        .link-btns
+        {
+            display: block;
+            padding: 10px 0 0 40px;
+            margin: 0 0 0 450px;
+        }
+        .link-btn
+        {
+        	margin: 15px;
+        }
+        .title-text
+        {
+        	margin: 80px;
+        	float: left;
+        	margin-left: 225px;
+        }
+        .userimage
+        {
+            float: inherit;
+        }
+        .twitter-widget ul
+        {
+            font-size: 11px;
+            color: #333333;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .twitter-widget ul li
+        {
+            border-width: 0 0 0 1px;
+            display: inline-block;
+            padding: 2px 4px;
+            width: 48px;
+            overflow: hidden;
+        }
+        .twitter-widget span#ctl00_btnPlaceholder_lblTotalFollowers, span#ctl00_btnPlaceholder_lblError
+        {
+        	float: left;
+            width: 100%;
+            font-family: Arial;
+            font-size: 11px;
+            color: #333333;
+            display: block;
+            padding: 0 0 7px 0;
+        }
+        .twitter-widget-checkbox label
+        {
+            width: 100%;
+            font-family: Arial;
+            font-size: 11px;
+            color: #333333;
+        }
+        .twitter-widget ul li a
+        {
+            color: gray;
+            text-decoration: none;
+        }
+        .twitter-widget ul li span
+        {
+            width: 50px;
+            display: block;
+            font-family: arial;
+            font-size: 10px;
+            width: 50px;
+            display: none;
+        }
+        .follow-btn a
+        {
+            color: #3B5998;
+            cursor: pointer;
+            text-decoration: none;
+            font-family: Arial;
+            font-size: 12px;
+            font-weight: bold;
+            display: block;
+            padding: 0 0 7px 0;
+        }
+        .gridview-header
+        {
+            margin-left: 220px;
+            margin-top: -40px;
+            float: left;
+        }
+        div.fadeMe {
+          opacity:    0.5; 
+          background: #000; 
+          width:      100%;
+          height:     100%; 
+          z-index:    998;
+          top:        0; 
+          left:       0; 
+          position:   fixed; 
+        }
+
+        .UpdateProgress {
+          z-index: 999;
+          top: 20%;
+          left: 38%;
+          position: fixed; 
+        }
+
+        .checkboxTwitterData 
+        {
+            margin-left: 20px;
+            margin-top: 40px;
+            float: left;
+        }
+        .hortext {
+            padding-left: 4px;
+            padding-right: 11px;
+        }

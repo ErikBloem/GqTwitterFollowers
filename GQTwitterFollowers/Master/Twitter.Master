@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Twitter.master.cs" Inherits="GQTwitterFollowers.Master.Twitter" %>
+<%@ Register Assembly="GQMenuBar" Namespace="geoqualMenuBar" TagPrefix="geoqual" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><%= Resources.Resource.TwitterFollowers %></title>
+    <link href="../Styles/TwitterCss.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="TwitterMaster" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server" EnableViewState="true">
+        <ContentTemplate>
+            <div id="masterdiv" style="float: left; height: 144px;" class="twitter-widget-masterdiv">
+                <asp:Image id="UserImage" runat="server" CssClass="userimage" ToolTip="<%$ Resources:Resource, Username %>" style="zoom: 0.7;" />
+                <div class="link-btns">
+                    <geoqual:GQMenuBar ID="GQMenuBar1" runat="server" DataTextField="Text" DataValueField="Level" Width="110" Height="20" />
+                </div>
+                <div class="title-text">
+                    <asp:Label ID="lblFriendsOrFollowers" runat="server"  CssClass="twitter-widget-header"></asp:Label>
+                </div>
+
+                <div class="follow-btn">
+                    <a id="ascreenname" runat="server"></a>
+                    <a id="ascreennamelink" runat="server" class="twitter-follow-button" data-show-count="false" data-lang="en"><%= Resources.Resource.FollowTwitterApi %></a>
+                </div>
+                <asp:ContentPlaceHolder ID="btnPlaceholder" runat="server">
+                   
+                </asp:ContentPlaceHolder>
+            </div>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+    <asp:UpdateProgress ID="UpdateProgress1" runat="server" AssociatedUpdatePanelID="UpdatePanel1">
+        <ProgressTemplate>
+            <div class="fadeMe">
+                <p class="UpdateProgress"><img src="../Images/animatedprogress.gif" alt="" /></p>
+            </div>
+        </ProgressTemplate>
+    </asp:UpdateProgress>
+
+    </form>
+</body>
+</html>
