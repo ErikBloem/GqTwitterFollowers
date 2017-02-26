@@ -119,11 +119,20 @@ namespace GQTwitterFollowers
                 }
                 Master.GQMenuBar.SelectedItem = Master.Friendorfollower.ToString();
 
-                ListUsers = Serializer.ReadBindingListXML(Master.Friendorfollower.ToString());
-                if (ListUsers == null)
-                    GQMenuBar_Command(Master.GQMenuBar, null);
-                else
-                    StartBinding();
+                switch (Master.Friendorfollower) {
+                    case Constants.FriendsFollowers.Analyze:
+                    case Constants.FriendsFollowers.Unfollow:
+                        ListUsers = Serializer.ReadBindingListXML(Master.Friendorfollower.ToString());
+                        if (ListUsers == null)
+                            GQMenuBar_Command(Master.GQMenuBar, null);
+                        else
+                            StartBinding();
+                        break;
+                    default:
+                        GQMenuBar_Command(Master.GQMenuBar, null);
+                        break;
+                }
+
             }
         }
 

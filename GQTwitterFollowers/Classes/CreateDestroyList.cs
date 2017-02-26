@@ -35,10 +35,20 @@ namespace GQTwitterFollowers
 
         public static BindingList<Twitter.User> GetNotFollowingList(List<Twitter.User> ListFriends, List<Twitter.User> ListFollowers)
         {
+            List<Twitter.User> ListFollowersAndInclude = new List<Twitter.User>(ListFriends);
+            List<Twitter.User> ListFriendsInclude = Serializer.ReadListXML(Constants.FriendsFollowers.NeverFollow.ToString());
+            if (ListFriendsInclude != null) {
+                foreach (Twitter.User user in ListFriendsInclude) {
+                    if (!ListFollowersAndInclude.Exists(x => x.UserId == user.UserId)) {
+                        ListFollowersAndInclude.Add(user);
+                    }
+                }
+            }
+
             BindingList<Twitter.User> notfollowingList = new BindingList<Twitter.User>();
             foreach (Twitter.User friend in ListFollowers)
             {
-                if (!ListFriends.Exists(x => x.UserId == friend.UserId))
+                if (!ListFollowersAndInclude.Exists(x => x.UserId == friend.UserId))
                 {
                     if (!notfollowingList.Contains(friend)) notfollowingList.Add(friend);
                 }
