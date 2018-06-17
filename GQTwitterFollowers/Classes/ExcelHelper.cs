@@ -14,6 +14,86 @@ namespace GQTwitterFollowers
 {
     public class ExcelHelper
     {
+        public static BindingList<Twitter.TweetId> ImportTweetIdsFromExcel(string sFilename)
+        {
+            BindingList<Twitter.TweetId> tweetids = null;
+
+            try {
+                Application xlObject = null;
+                Workbook xlWB = null;
+                Worksheet xlSh = null;
+                try {
+                    xlObject = new Application();
+                    xlObject.ErrorCheckingOptions.NumberAsText = false;
+
+                    //'This Adds a new woorkbook, you could open the workbook from file also
+                    xlWB = xlObject.Workbooks.Open(sFilename, 0, true, 5, "", "", true, Microsoft.Office.Interop.Excel.XlPlatform.xlWindows, "\t", false, false, 0, true, 1, 0);
+                    xlSh = (Worksheet)xlObject.ActiveWorkbook.ActiveSheet;
+
+                    Range usedrange = xlSh.UsedRange;
+                    tweetids = new BindingList<Twitter.TweetId>();
+
+                    int index = 1;
+                    foreach (Range r in usedrange.Rows) {
+                        //no header
+                        if (r.Row > 1) {
+                            Twitter.TweetId tweetid = new Twitter.TweetId();
+                            tweetid.Index = index;
+                            for (int cCnt = 1; cCnt <= usedrange.Columns.Count; cCnt++) {
+                                Range rgobj = (usedrange.Cells[r.Row, cCnt] as Range);
+                                object str = (object)rgobj.Text;
+                                if (cCnt == 1) {
+                                    tweetid.Tweet_Id = str.ToString();
+                                } else if (cCnt == 2) {
+                                    tweetid.In_reply_to_status_id = str.ToString();
+                                } else if (cCnt == 3) {
+                                    tweetid.In_reply_to_user_id = str.ToString();
+                                } else if (cCnt == 4) {
+                                    tweetid.Timestamp = str.ToString();
+                                } else if (cCnt == 5) {
+                                    tweetid.Source = str.ToString();
+                                } else if (cCnt == 6) {
+                                    tweetid.Text = str.ToString();
+                                } else if (cCnt == 7) {
+                                    tweetid.Retweeted_status_id = str.ToString();
+                                } else if (cCnt == 8) {
+                                    tweetid.Retweeted_status_user_id = str.ToString();
+                                } else if (cCnt == 9) {
+                                    tweetid.Retweeted_status_timestamp = str.ToString();
+                                } else if (cCnt == 10) {
+                                    tweetid.Expanded_urls = str.ToString();
+                                }
+                            }
+                            tweetids.Add(tweetid);
+                            index++;
+                        }
+                    }
+                } catch (System.Runtime.InteropServices.COMException) {
+
+                } catch (Exception) {
+
+                } finally {
+                    try {
+                        if (xlWB != null) xlWB.Close(null, null, null);
+                        xlObject.Workbooks.Close();
+                        xlObject.Quit();
+                        if (xlSh != null) Marshal.ReleaseComObject(xlSh);
+                        if (xlWB != null) Marshal.ReleaseComObject(xlWB);
+                        if (xlObject != null) Marshal.ReleaseComObject(xlObject);
+                    } catch {
+                    }
+                    xlSh = null;
+                    xlWB = null;
+                    xlObject = null;
+                    // force final cleanup!
+                    GC.Collect();
+                    GC.WaitForPendingFinalizers();
+                }
+            } catch (Exception) {
+            }
+            return tweetids;
+        }
+
         public static BindingList<Twitter.User> ImportFromExcel(string sFilename)
         {
             BindingList<Twitter.User> users = null;

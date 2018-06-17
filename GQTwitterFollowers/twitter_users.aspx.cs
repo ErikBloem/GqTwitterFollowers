@@ -48,6 +48,9 @@ namespace GQTwitterFollowers
                 case Constants.FriendsFollowers.NeverFollow:
                     Response.Redirect(string.Format(Master.REDIRECTSTRING, Constants.FriendsFollowers.Unfollow.ToString().ToLower(), friendsorfollowers));
                     break;
+                case Constants.FriendsFollowers.Timeline:
+                    Response.Redirect(string.Format(Master.REDIRECTSTRING, Constants.FriendsFollowers.Timeline.ToString().ToLower(), friendsorfollowers));
+                    break;
             }
         }
 

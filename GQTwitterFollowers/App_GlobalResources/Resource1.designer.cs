@@ -88,11 +88,47 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Createdat.
+        /// </summary>
+        internal static string Createdat {
+            get {
+                return ResourceManager.GetString("Createdat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Delete.
         /// </summary>
         internal static string Delete {
             get {
                 return ResourceManager.GetString("Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete All.
+        /// </summary>
+        internal static string DeleteAll {
+            get {
+                return ResourceManager.GetString("DeleteAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete All Replies.
+        /// </summary>
+        internal static string DeleteAllReply {
+            get {
+                return ResourceManager.GetString("DeleteAllReply", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete All Retweets.
+        /// </summary>
+        internal static string DeleteAllRetweets {
+            get {
+                return ResourceManager.GetString("DeleteAllRetweets", resourceCulture);
             }
         }
         
@@ -156,6 +192,15 @@ namespace Resources {
         internal static string Exclude {
             get {
                 return ResourceManager.GetString("Exclude", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to First.
+        /// </summary>
+        internal static string First {
+            get {
+                return ResourceManager.GetString("First", resourceCulture);
             }
         }
         
@@ -232,11 +277,29 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ID.
+        /// </summary>
+        internal static string ID {
+            get {
+                return ResourceManager.GetString("ID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Index.
         /// </summary>
         internal static string Index {
             get {
                 return ResourceManager.GetString("Index", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Is Reply.
+        /// </summary>
+        internal static string IsReply {
+            get {
+                return ResourceManager.GetString("IsReply", resourceCulture);
             }
         }
         
@@ -250,11 +313,29 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Next.
+        /// </summary>
+        internal static string Next {
+            get {
+                return ResourceManager.GetString("Next", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ProfileImage.
         /// </summary>
         internal static string ProfileImage {
             get {
                 return ResourceManager.GetString("ProfileImage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Retweeted.
+        /// </summary>
+        internal static string Retweeted {
+            get {
+                return ResourceManager.GetString("Retweeted", resourceCulture);
             }
         }
         
@@ -277,11 +358,38 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Text.
+        /// </summary>
+        internal static string Text {
+            get {
+                return ResourceManager.GetString("Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Total.
         /// </summary>
         internal static string Total {
             get {
                 return ResourceManager.GetString("Total", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tweet Id.
+        /// </summary>
+        internal static string TweetId {
+            get {
+                return ResourceManager.GetString("TweetId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Recreate from TweetId Excel (slow).
+        /// </summary>
+        internal static string TweetIdExcelData {
+            get {
+                return ResourceManager.GetString("TweetIdExcelData", resourceCulture);
             }
         }
         
@@ -300,6 +408,15 @@ namespace Resources {
         internal static string TwitterFollowers {
             get {
                 return ResourceManager.GetString("TwitterFollowers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User.
+        /// </summary>
+        internal static string User {
+            get {
+                return ResourceManager.GetString("User", resourceCulture);
             }
         }
         

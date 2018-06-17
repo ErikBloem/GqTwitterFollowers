@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ArrayOfUser xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <User>
+    <Index>1</Index>
+    <Createdat>1/1/0001 12:00:00 AM</Createdat>
+    <Name />
+    <ScreenName>BoenaSvoabo</ScreenName>
+    <ProfileImage>http://pbs.twimg.com/profile_images/488814271644446720/LdHLUP4B_normal.jpeg</ProfileImage>
+    <UserId>2337236772</UserId>
+  </User>
+</ArrayOfUser>

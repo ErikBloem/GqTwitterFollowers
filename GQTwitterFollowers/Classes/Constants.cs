@@ -9,6 +9,7 @@ namespace GQTwitterFollowers
     public class Constants
     {
         public const string USERS = "users";
+        public const string NAME = "name";
         public const string SCREEN_NAME = "screen_name";
         public const string PROFILE_IMAGE_URL = "profile_image_url";
         public const string ID = "id";
@@ -51,6 +52,12 @@ namespace GQTwitterFollowers
         public const string HREF = "href";
         public const string HTTPTWITTER = "https://twitter.com/";
 
+        public const string CREATEDAT = "created_at";
+        public const string TEXT = "text";
+        public const string INREPLY = "in_reply";
+        public const string RETWEETEDSTATUS = "retweeted_status";
+        public const string RETWEETED = "retweeted";
+
         public const string IMG = "img";
         public enum FriendsFollowers
         {
@@ -61,6 +68,9 @@ namespace GQTwitterFollowers
             Unfollow,
             NotFollowing,
             NeverFollow,
+            Timeline,
+            TweetId,
+            TweetIdExcel,
             Users
         };
 

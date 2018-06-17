@@ -204,4 +204,43 @@
   <data name="FollowAll" xml:space="preserve">
     <value>Follow All on Twitter</value>
   </data>
+  <data name="ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="Retweeted" xml:space="preserve">
+    <value>Retweeted</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="Createdat" xml:space="preserve">
+    <value>Createdat</value>
+  </data>
+  <data name="IsReply" xml:space="preserve">
+    <value>Is Reply</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="DeleteAll" xml:space="preserve">
+    <value>Delete All</value>
+  </data>
+  <data name="DeleteAllReply" xml:space="preserve">
+    <value>Delete All Replies</value>
+  </data>
+  <data name="DeleteAllRetweets" xml:space="preserve">
+    <value>Delete All Retweets</value>
+  </data>
+  <data name="First" xml:space="preserve">
+    <value>First</value>
+  </data>
+  <data name="TweetId" xml:space="preserve">
+    <value>Tweet Id</value>
+  </data>
+  <data name="TweetIdExcelData" xml:space="preserve">
+    <value>Recreate from TweetId Excel (slow)</value>
+  </data>
 </root>

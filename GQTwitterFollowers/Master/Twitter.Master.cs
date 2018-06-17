@@ -1,18 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
-using System.ComponentModel;
-using System.Xml;
 
 namespace GQTwitterFollowers.Master
 {
     public partial class Twitter : MasterPage
     {
+        public string screen_name = string.Empty;
         private Constants.FriendsFollowers friendorfollower = Constants.FriendsFollowers.Friends;
         public string REDIRECTSTRING = "~/twitter_{0}.aspx?friendorfollower={1}";
         public Constants.FriendsFollowers Friendorfollower
@@ -33,7 +28,6 @@ namespace GQTwitterFollowers.Master
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            string screen_name = string.Empty;
             string screen_name_description = string.Empty;
             string screen_image = string.Empty;
 

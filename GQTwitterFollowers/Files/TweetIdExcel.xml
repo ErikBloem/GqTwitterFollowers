@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ArrayOfTweetId xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TweetId>
+    <Index>2694</Index>
+    <Createdat>1/1/0001 12:00:00 AM</Createdat>
+    <Tweet_Id>817153646404182016</Tweet_Id>
+    <In_reply_to_status_id />
+    <In_reply_to_user_id />
+    <Timestamp>1/6/2017 12:39:45 AM</Timestamp>
+    <Source>&lt;a href="http://twitter.com" rel="nofollow"&gt;Twitter Web Client&lt;/a&gt;</Source>
+    <Text>RT @JezzSande: "Time for a checkup" #cute #animals #aww #pics https://t.co/eAhmafzxdq</Text>
+    <Retweeted_status_id>8.17151E+17</Retweeted_status_id>
+    <Retweeted_status_user_id>7.86246E+17</Retweeted_status_user_id>
+    <Retweeted_status_timestamp>1/6/2017 12:29:58 AM</Retweeted_status_timestamp>
+    <Expanded_urls>https://twitter.com/JezzSande/status/817151181843812353/video/1,https://twitter.com/JezzSande/status/817151181843812353/video/1</Expanded_urls>
+  </TweetId>
+ </ArrayOfTweetId>

@@ -311,7 +311,7 @@ namespace GQTwitterFollowers
                             if (Master.Friendorfollower != Constants.FriendsFollowers.Exclude &
                                 Master.Friendorfollower != Constants.FriendsFollowers.NeverFollow) {
                                 Control ctrlbtnDel = e.Row.FindControl("btnDelete");
-                                if (ctrlbtnDel != null) ctrlbtnDel.Visible = false;
+                                //if (ctrlbtnDel != null) ctrlbtnDel.Visible = false;
                             }
 
                             break;
